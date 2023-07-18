@@ -579,7 +579,7 @@ img {
 
 /*-----Footer form-----*/
 
-.ftr-form-sect {
+.footer-form-section {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -588,7 +588,7 @@ img {
   width: 453px;
 }
 
-.ftr-form-title {
+.footer-form-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -597,20 +597,20 @@ img {
   margin-bottom: 16px;
 }
 
-.ftr-form {
+.footer-form {
   display: flex;
   justify-content: start;
   align-items: start;
   gap: 24px;
 }
 
-.ftr-label {
+.footer-label {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.ftr-input {
+.footer-input {
   padding: 8px 16px;
   width: 264px;
   height: 40px;
@@ -624,11 +624,11 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
-.ftr-input::placeholder {
+.footer-input::placeholder {
   color: #FFFFFF;
 }
 
-.ftr-form-btn {
+.footer-form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -645,15 +645,15 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim);
 }
 
-.ftr-form-btn:hover,
-.ftr-form-btn:focus {
+.footer-form-btn:hover,
+.footer-form-btn:focus {
   background-color: var(--header-ahf-cl);
 }
 
-.ftr-modal-icon {
+.footer-modal-icon {
   margin-left: 16px;
 }
 
@@ -757,7 +757,6 @@ img {
   max-width: 360px;
 }
 
-
 .form-unit {
   display: flex;
   flex-direction: column;
@@ -809,7 +808,7 @@ img {
   left: 16px;
   bottom: 8px;
   fill: rgba(46, 47, 66, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--anim);
   top: 50%;
   transform: translateY(-50%);
 }
@@ -843,7 +842,7 @@ img {
   width: 360px;
   height: 120px;
   resize: none;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--anim);
 }
 
 .comm-form-input:focus {
@@ -875,7 +874,7 @@ img {
   border-radius: 2px;
   margin-right: 8px;
   fill: transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim), border var(--anim), fill var(--anim);
 }
 
 .check-box:checked+.policy .custom-check-box {
@@ -889,7 +888,6 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  ;
   user-select: none;
 }
 
@@ -918,7 +916,7 @@ img {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--anim);
 }
 
 .form-button:hover,
