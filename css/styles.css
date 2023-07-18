@@ -647,12 +647,142 @@ img {
   fill: #ffffff;
 }
 
-
 .modal-icon {
   stroke: #2E2F42;
   transition: fill var(--anim);
 }
 
+
+
+
+
+.form__box__label {
+  margin-bottom: 8px;
+}
+
+.form__label__list {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--customers-link);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.box_list_icon {
+  position: relative;
+  width: 360px;
+}
+
+.box_list_icon:focus-within>svg {
+  fill: #4D5AE5;
+}
+
+.form__box__comment {
+  margin-bottom: 16px;
+}
+
+.form__input {
+  border: 1px solid #8E8F99;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  padding-left: 38px;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__input:hover,
+.form__input:focus {
+  border: 1px solid #4D5AE5;
+}
+
+.form__list_icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  fill: rgba(46, 47, 66, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__comment {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+  border-radius: 4px;
+  padding: 8px 16px;
+  outline: transparent;
+  resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__comment:hover,
+.form__comment:focus {
+  border-color: #4d5ae5;
+}
+
+.form__checkbox {
+  margin-bottom: 24px;
+}
+
+.input__checkbox:checked+.checkbox__text .privacy__checkbox {
+  border: none;
+  background-color: var(--form);
+  fill: var(--icon-team);
+}
+
+.checkbox__text {
+  color: var(--customers-link);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.privacy__checkbox {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  margin-right: 8px;
+}
+
+.privacy__policy {
+  color: var(--button-cl);
+  text-decoration: underline;
+}
+
+.form__button {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4D5AE5;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
